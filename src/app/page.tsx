@@ -1,8 +1,13 @@
 import React from "react";
 import classes from "./page.module.scss";
+import HomePage from "./components/homepage/homepage";
 
-const homepage = () => {
-  return <div className={classes.container}>homepage</div>;
+const DefaultPage = () => {
+  return (
+    <div className={classes.container}>
+      <HomePage></HomePage>
+    </div>
+  );
 };
 
-export default homepage;
+export default DefaultPage;

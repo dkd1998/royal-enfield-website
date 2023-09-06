@@ -1,11 +1,36 @@
 .container {
-  width: 1500px;
+  max-width: 1500px;
   margin: 0 auto;
   background: #d5d5d5;
   padding: 2rem;
+  font-size: 1rem;
 }
 
 .heading {
   font-weight: 800;
-  font-size: 8rem;
+  font-size: 6rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    font-size: 0.8rem;
+  }
+
+  .heading {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .heading {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .heading {
+    font-size: 2rem;
+  }
 }
