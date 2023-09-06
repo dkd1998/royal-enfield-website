@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import classes from "./navbar.module.scss";
@@ -16,13 +18,25 @@ const navigationLinks = [
 ];
 
 const Navbar = () => {
+  const clickhandler = () => {};
+
   return (
     <div className={classes["nav-container"]}>
-      {navigationLinks.map((link) => (
-        <Link href={link.url} key={link.id} className={classes.link}>
-          {link.name}
-        </Link>
-      ))}
+      <Link href="/" className={classes["logo-container"]}>
+        <img src="/re-logo.png" alt="" />
+      </Link>
+
+      <div>
+        {navigationLinks.map((link) => (
+          <Link href={link.url} key={link.id} className={classes.link}>
+            {link.name}
+          </Link>
+        ))}
+      </div>
+
+      <button type="button" className={classes.login} onClick={clickhandler}>
+        Login
+      </button>
     </div>
   );
 };

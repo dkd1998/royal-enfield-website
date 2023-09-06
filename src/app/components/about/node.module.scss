@@ -1,0 +1,28 @@
+.node-wrapper {
+  display: flex;
+  padding: 2rem;
+
+  &-image {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    img {
+      width: auto;
+      height: 40rem;
+    }
+  }
+
+  &-description {
+    width: 50%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      font-size: 5rem;
+    }
+    p {
+      font-size: 2rem;
+    }
+  }
+}
