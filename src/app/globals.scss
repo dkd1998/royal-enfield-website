@@ -29,3 +29,7 @@ a {
 .container {
   background: #d5d5d5;
 }
+
+.swiper-pagination-bullet-active {
+  background-color: $primary-color !important;
+}
