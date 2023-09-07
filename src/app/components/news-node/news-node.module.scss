@@ -7,6 +7,19 @@ $primary-color: #da291c;
   overflow: hidden;
   transition: all 0.3s ease-out;
 
+  &-date {
+    font-size: 1.5rem;
+    margin: 0rem 2rem;
+    display: flex;
+    align-items: center;
+    color: $primary-color;
+    span {
+      color: black;
+      display: inline-block;
+      margin-left: 1rem;
+    }
+  }
+
   img {
     width: 100%;
     height: 50%;
@@ -18,11 +31,11 @@ $primary-color: #da291c;
 
   h3 {
     font-size: 2rem;
-    margin: 2rem 2rem 1.5rem 2rem;
+    margin: 2rem;
     transition: all 0.3s;
   }
   p {
-    margin: 0rem 2rem;
+    margin: 2rem;
     font-size: 1.6rem;
   }
 
