@@ -4,10 +4,11 @@ $primary-color: #da291c;
 .section-wrapper {
   max-width: 1500px;
   margin: 0 auto;
+  padding: 5rem 0rem;
 }
 
 .heading {
-  margin: 2rem 0rem;
+  margin-bottom: 2rem;
   font-size: 6rem;
   font-weight: 900;
   color: #28282b;
@@ -17,8 +18,8 @@ $primary-color: #da291c;
 
 .bike {
   &-wrapper {
-    padding: 2rem;
     font-size: 1rem;
+    margin-bottom: 2rem;
     display: grid;
     gap: 4rem;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
