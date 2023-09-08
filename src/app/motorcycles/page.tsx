@@ -1,7 +1,8 @@
 import React from "react";
+import Bike from "../components/bike/bike";
 
 const Motorcycles = () => {
-  return <div>Motorcycles</div>;
+  return <Bike></Bike>;
 };
 
 export default Motorcycles;
