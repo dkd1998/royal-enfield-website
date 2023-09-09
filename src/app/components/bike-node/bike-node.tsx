@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import classes from "./bike-node.module.scss";
 import { AiOutlineSchedule } from "react-icons/ai";
 import { BiExpand } from "react-icons/bi";
+import { ThemeContext } from "@/app/context/ThemeContext";
 
 const BikeNode = (props: any) => {
   const { imageSource, bikeName } = props;

@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 
 import { register } from "swiper/element/bundle";
+import { ThemeProvider } from "./context/ThemeContext";
 
 export const metadata: Metadata = {
   title: "Royal Enfield",
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
-        {children}
-        <Footer />
+        <ThemeProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

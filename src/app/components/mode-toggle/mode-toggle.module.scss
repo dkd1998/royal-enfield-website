@@ -1,0 +1,40 @@
+// Color variables
+$primary-color: #da291c;
+
+.button-wrapper {
+  color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 18px;
+  position: relative;
+  background: black;
+  cursor: pointer;
+  transition: all 0.3s;
+  padding: 4px 6px;
+
+  span {
+    display: inline-block;
+    margin: 0px 2px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__sun {
+    color: orange;
+  }
+  &__moon {
+    color: yellow;
+  }
+
+  &__toggler {
+    position: absolute;
+    display: inline-block;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: white;
+  }
+
+  &:hover {
+  }
+}

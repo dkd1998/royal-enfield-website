@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-$primary-color: #da291c;
+@import "./scss-variables.scss";
 
 * {
   box-sizing: border-box;
@@ -28,6 +28,16 @@ a {
 
 .container {
   background: #d5d5d5;
+}
+
+.light {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.dark {
+  background-color: #111111;
+  color: white;
 }
 
 .swiper-pagination-bullet-active {

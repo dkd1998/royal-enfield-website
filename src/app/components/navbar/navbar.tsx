@@ -3,6 +3,7 @@
 import Link from "next/link";
 import React from "react";
 import classes from "./navbar.module.scss";
+import ModeToggle from "../mode-toggle/mode-toggle";
 
 const navigationLinks = [
   {
@@ -23,7 +24,7 @@ const Navbar = () => {
   return (
     <div className={classes["nav-container"]}>
       <Link href="/" className={classes["logo-container"]}>
-        <img src="/re-logo.png" alt="" />
+        <img src="/re-logo.png" alt="logo" />
       </Link>
 
       <div>
@@ -34,9 +35,12 @@ const Navbar = () => {
         ))}
       </div>
 
-      <button type="button" className={classes.login} onClick={clickhandler}>
-        Login
-      </button>
+      <div className={classes["right-wrapper"]}>
+        <ModeToggle></ModeToggle>
+        <button type="button" className={classes.login} onClick={clickhandler}>
+          Login
+        </button>
+      </div>
     </div>
   );
 };
